@@ -10,11 +10,7 @@ Given a signed undirected graph $G = (V, E^+ \cup E^-)$, where edges are labeled
 - Positive edges lie *within* clusters, and
 - Negative edges lie *between* clusters.
 
-The objective is to minimize the **disagreement cost** defined as:
-
-
-$\text{cost}(\mathcal{C}) = |\{ (u,v) \in E^+ \mid u \not\sim_{\mathcal{C}} v \}| + |\{ (u,v) \in E^- \mid u \sim_{\mathcal{C}} v \}|$
-
+The objective is to minimize the **disagreement cost**
 
 This problem is NP-hard in general. The implemented algorithm offers a scalable and provably approximate solution.
 
