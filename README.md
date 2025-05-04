@@ -22,12 +22,10 @@ The algorithm builds on the following two principles from Cohen-Addad et al.'s c
 
 ### 1. α-Bucketed CC-Pivot
 
-- Each vertex is assigned a hash-based random **rank** in \([0,1)\).
+- Each vertex is assigned a hash-based random **rank** in [0,1).
 - Vertices are grouped into **buckets** of width α (with default $\alpha = 2/13$, forming $ L = \lceil 1/\alpha \rceil = 7 $ total buckets.
 - Within each bucket, singleton vertices evaluate the **net gain** of joining each neighboring cluster:
-  \[
-  \text{gain}(S \to C) = |E^+(S,C)| - |E^-(S,C)|
-  \]
+  $\text{gain}(S \to C) = |E^+(S,C)| - |E^-(S,C)|$
   and move greedily to the best available cluster if the gain is non-negative.
 
 ### 2. Boosting via Permutations
@@ -43,9 +41,8 @@ This combination ensures high-quality clustering with bounded approximation guar
 
 Cohen-Addad et al. (2024) prove that the described algorithm achieves an approximation ratio of:
 
-\[
-\text{Approximation Factor} = 2 - \frac{2}{13} \approx 1.846
-\]
+
+$\text{Approximation Factor} = 2 - \frac{2}{13} \approx 1.846$
 
 The approximation is achieved deterministically for each permutation. The boosting via multiple trials improves the probability of obtaining a near-optimal solution exponentially.
 
