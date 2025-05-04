@@ -23,7 +23,7 @@ The algorithm builds on the following two principles from Cohen-Addad et al.'s c
 ### 1. α-Bucketed CC-Pivot
 
 - Each vertex is assigned a hash-based random **rank** in \([0,1)\).
-- Vertices are grouped into **buckets** of width α (with default \(\alpha = 2/13\)), forming \( L = \lceil 1/\alpha \rceil = 7 \) total buckets.
+- Vertices are grouped into **buckets** of width α (with default $\alpha = 2/13$, forming $ L = \lceil 1/\alpha \rceil = 7 $ total buckets.
 - Within each bucket, singleton vertices evaluate the **net gain** of joining each neighboring cluster:
   \[
   \text{gain}(S \to C) = |E^+(S,C)| - |E^-(S,C)|
