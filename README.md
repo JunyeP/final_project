@@ -68,7 +68,19 @@ The system is implemented using Spark's GraphX library. It supports graphs with 
 
 ---
 
-## Output Format
+## Result
+Experiments were conducted on a Google Cloud Dataproc cluster with the following configuration:
 
-The final output is a clustering file in the format:
+- **1 master node**: `n4-standard-2` (2 vCPU, 1 core, 8 GB memory)
+- **2 worker nodes**: `n4-standard-2` (4 vCPU, 2 cores, 16 GB memory each)
 
+### Runtime and Disagreement Metrics
+
+| Dataset                      | Size       | Runtime        | Number of Disagreements |
+|------------------------------|------------|----------------|--------------------------|
+| `log_normal_100.csv`         | 18 KB      | 35 sec         | 2,259                    |
+| `musae_ENGB_edges.csv`       | 377 KB     | 42 sec         | 713,379                  |
+| `soc-pokec-relationships.csv`| 331.4 MB   | 7 min 57 sec   | 29,280,710               |
+| `soc-LiveJournal1.csv`       | 670.6 MB   | 14 min 46 sec  | 54,195,818               |
+| `twitter_original_edges`     | 990.8 MB   | 19 min 51 sec  | 63,801,170,558           |
+| `com-orkut.ungraph`          | 1.89 GB    | 27 min 11 sec  | 403,271,165              |
