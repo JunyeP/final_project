@@ -12,9 +12,9 @@ Given a signed undirected graph $G = (V, E^+ \cup E^-)$, where edges are labeled
 
 The objective is to minimize the **disagreement cost** defined as:
 
-\[
-\text{cost}(\mathcal{C}) = |\{ (u,v) \in E^+ \mid u \not\sim_{\mathcal{C}} v \}| + |\{ (u,v) \in E^- \mid u \sim_{\mathcal{C}} v \}|
-\]
+
+$\text{cost}(\mathcal{C}) = |\{ (u,v) \in E^+ \mid u \not\sim_{\mathcal{C}} v \}| + |\{ (u,v) \in E^- \mid u \sim_{\mathcal{C}} v \}|$
+
 
 This problem is NP-hard in general. The implemented algorithm offers a scalable and provably approximate solution.
 
