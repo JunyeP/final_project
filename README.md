@@ -1,5 +1,4 @@
-# Correlation Clustering using GraphX
-
+# Correlation Clustering
 This project implements a scalable **Combinatorial Correlation Clustering** algorithm on Apache Spark's GraphX framework, based on the 2 – 2⁄13 approximation from Cohen-Addad et al. (2024). The implementation is efficient for distributed environments, avoids expensive union-find steps, and performs well on large signed graphs.
 
 ---
