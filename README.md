@@ -5,7 +5,7 @@ This project implements a scalable **Combinatorial Correlation Clustering** algo
 
 ## Problem Overview
 
-Given a signed undirected graph \( G = (V, E^+ $\cup$ E^-) \), where edges are labeled as either "positive" or "negative," the goal of **correlation clustering** is to partition the vertex set \( V \) into clusters so that:
+Given a signed undirected graph \( G = $(V, E^+ \cup E^-)$ \), where edges are labeled as either "positive" or "negative," the goal of **correlation clustering** is to partition the vertex set \( V \) into clusters so that:
 
 - Positive edges lie *within* clusters, and
 - Negative edges lie *between* clusters.
